@@ -1,0 +1,53 @@
+html {
+     background-color: rgb(242, 98, 98);
+}
+
+h1 {color: black;}
+
+p { 
+    color: rgb(255, 255, 255);}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.container img {
+    flex: 1;
+    object-fit: cover;
+    width: 33.33%;
+}
+
+
+.image-container {
+        display: flex;
+    }
+    
+    .image-container img {
+        margin-right: 30px;
+ }
+
+
+.image_2-container{
+    display: flex;
+
+}
+
+.image-container img {
+    margin-right: 30px;
+}
+
+
+.image_3-container{
+    display: flex;
+
+}
+
+.image-container img {
+    margin-right: 30px;
+}
