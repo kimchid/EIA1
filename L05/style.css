@@ -1,53 +1,25 @@
-
-
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
+    background-color: rgb(93, 87, 87)
 }
 
-.container {
-    position: relative;   
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
 
-.fibonacci-image {
-    width: 100px;
-    height: auto;
-    object-fit: cover;
-    margin: 10px;
-    position: absolute;
-}
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
 
-#image1 {
-    top: 0;
-    left: 0;
-}
+@media only screen and (min-width: 600px) and (max-width: 930px) {
 
-#image2 {
-    top: 200;
-    left: 130px;
-}
+    .cat_1 {
 
-#image3 {
-    bottom: 200px;
-    left: 130;
-}
-
-@media only screen and (min-width: 430px) and (max-width: 930px) {
-    .fibonacci-image {
-        max-width: 250px; 
+        position: absolute;
     }
-}
+    
+    .cat_2 {
 
-@media only screen and (min-width: 1280px) {
-    .fibonacci-image {
-        max-width: 400px;
+        position: absolute;
     }
+    
+    .cat_3 {
+        position: absolute;
+    }
+    
+
+
 }
