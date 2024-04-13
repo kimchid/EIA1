@@ -1,21 +1,45 @@
-stories = [
-    "habe links geklickt",
-    "rechts geklickt",
-    "falsch gegklickt"
-]
 
-let state = 1;
+const player = document.getElementById('player');
+const obstacle = document.getElementById('obstacle');
 
-const input = document.querySelector(".inputForm__field")
-const output = document.getElementById("output");
+let playerPosition = 0;
+let obstaclePosition = 380;
+let gameover = false;
 
-input.addEventListener("keydown", function (event) {
-    if (event.key == "Enter") {
-        if (input.value == "links") {
-            output.innerHTML = stories [0]
-        } else if (input.value == "rechts") {
-            output.innerHTML = stories[1]
-        }
+document.addEventListener('keydown', movePlayer);
+
+function movePlayer(e) {
+  if (e.key === 'ArrowUp' && playerPosition > 0) {
+    playerPosition -= 10;
+  } else if (e.key === 'ArrowDown' && playerPosition < 170) {
+    playerPosition += 10;
+  }
+
+  player.style.top = `${playerPosition}px`;
+}
+
+function gameLoop() {
+  if (!gameover) {
+    obstaclePosition -= 5;
+    obstacle.style.left = `${obstaclePosition}px`;
+
+    if (
+      playerPosition < 30 &&
+      playerPosition + 20 > 10 &&
+      obstaclePosition < 30 &&
+      obstaclePosition + 20 > 10
+    ) {
+      gameover = true;
+      alert('Game Over! Du hast das Hindernis getroffen.');
     }
 
-})
+    if (obstaclePosition < -20) {
+      obstaclePosition = 380;
+    }
+
+    requestAnimationFrame(gameLoop);
+  }
+}
+
+gameLoop();
+

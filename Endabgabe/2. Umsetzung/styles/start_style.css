@@ -1,0 +1,112 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url(gifs/gif_1.gif);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+@font-face {
+    font-family: 'font';
+    src: url('fonts/font.ttf') format('truetype');
+
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    text-decoration: none;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+.icon img {
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+.header_text {
+    font-family: 'font';
+    font-size: 60px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: 100px;
+}
+
+.container {
+    text-align: center;
+    padding: 60px;
+    background-color: #42497C;
+    border: 1px solid #ffffff;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #75427C;
+    color: #fff;
+    cursor: pointer;
+}
+  
+.brett {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 5px;
+    margin-top: 20px;
+    font-family: 'font';
+}
+  
+.zelle {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #ffffff;
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font: 'font'solid #ffffff;
+    color: #ffffff;
+}
+
+.neustartButton{
+    font-family: 'font';
+    font-size: 20px;
+    margin-top: 50px;
+}
+  
+.status {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #ffffff;
+    font-family: 'font';
+}
+
+footer {
+    color: #fff;
+    padding: 5px;
+    text-align: right;
+    position: fixed;
+    bottom: 0;
+    width: 125px;
+    right: 0;
+    font-family: 'font';
+}
+
+  
